@@ -1,0 +1,103 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.bg_heart {
+    min-width: 30%;
+    min-height: 30%;
+    /* backdrop-filter: none; */
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 2px black;
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.fa-heart {
+    color: rgba(238, 12, 12, 0.934);
+    font-size: 25px;
+    position: absolute;
+    animation: heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+
+@keyframes heartMove {
+    0% {
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(110vh);
+    }
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: cursive;
+}
+
+.heart {
+    position: absolute;
+    top: -50%;
+}
+
+.heart:before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart:after {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+@keyframes love {
+    0% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes love {
+    0% {
+        top: 100%
+    }
+}
+
+@-moz-keyframes love {
+    0% {
+        top: 100%
+    }
+}
+
+@-ms-keyframes love {
+    0% {
+        top: 100%
+    }
+}
